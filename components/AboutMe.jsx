@@ -8,24 +8,32 @@ const quicksand = Quicksand({
   subsets: ['latin'],
 })
 
+const technologies = [
+    'React',
+    'Next.js',
+    'JavaScript',
+    'SpringBoot',
+    'HTML',
+    'Vue.js',
+    'R',
+    'CSS',
+    'Tailwind CSS',
+    'Python',
+  ];
+  
+  const technologyList = technologies.map((tech, index) => (
+    <li key={index}>{tech}</li>
+  ));
+  
+  
+
 //1d
 const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
         content: (
-          <ul className="list-disc pl-2">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>JavaScript</li>
-                <li>SpringBoot</li>
-                <li>HTML</li>
-                <li>Vue.js</li>
-                <li>R</li>
-                <li>CSS</li>
-                <li>Tailwind CSS</li>
-                <li>Python</li>
-          </ul>
+            <ul className="list-disc pl-2">{technologyList}</ul>
         ),
     },
     {
@@ -62,7 +70,7 @@ const AboutMe = () => {
     };
     //1a
     return(
-        <section className={`text-white ${quicksand.className}`}grid id="aboutMe">
+        <section className={`text-white ${quicksand.className} grid `} id="aboutMe">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-32 py-16 xl-gap-16 items-center">
                 <div>
                     <img src="/AboutMe.png" alt="About Me" width={450} height={450} style={{ borderRadius: "25px" }}/>

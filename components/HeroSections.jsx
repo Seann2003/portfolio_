@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 
 const inter = Inter({ weight: ['400', '900'], subsets: ['latin'] })
 
 const HeroSection = () => {
   return (
-    <main className="py-16 mt-16 md-flex md:shrink-0">
+    <main className="py-16 mt-16 md-flex md:shrink-0 mx-14">
       <div className={` grid grid-cols-1 md:grid-cols-12 ${inter.className}`}>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -34,7 +35,7 @@ const HeroSection = () => {
                 }}
                 onInit={(typewriter) => {
                     typewriter
-                    .typeString`<span style="color:#FF77FF">Web Developer</span>`
+                    .typeString`<span style="color:#FF77FF">Back-end Developer</span>`
                     .pauseFor(1500)
                     .deleteAll()
                     .typeString`<span style="color:#9E7BFF">Software Engineer</span>`
@@ -71,7 +72,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
           >
           <div className="w-[400px] h-[400px] relative z-0">
-            <img
+            <Image
               src="/Hero-Section.png"
               alt="hero section"
               className=" transform rounded-full flex relative -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"

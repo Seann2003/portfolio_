@@ -11,14 +11,13 @@ const quicksand = Quicksand({
 const technologies = [
     'React',
     'Next.js',
-    'JavaScript',
+    'TypeScript',
     'SpringBoot',
-    'HTML',
     'Vue.js',
-    'R',
-    'CSS',
     'Tailwind CSS',
     'Python',
+    'Golang',
+    'Solidity',
   ];
   
   const technologyList = technologies.map((tech, index) => (
@@ -43,7 +42,9 @@ const TAB_DATA = [
           <ul className="list-disc pl-2">
             <li>AppSheet Hackathon 2023</li>
             <li>KLESF Competition 2017</li>
-            <li>ACI YLS Sustainability Startathon Malaysia</li>
+            <li>ACI YLS Sustainability Startathon Malaysia Top 10 Finalist</li>
+            <li>Solana Buildstation 2024 Top 15 Winner</li>
+            <li>EthKL 2024 WorldID and Scroll Pool Prize Winner</li>
           </ul>
         ),
     },

@@ -29,6 +29,27 @@ const projectData = [
         description: "Quiz website that is like Quizzeria using React and Flask",
         image: "/projects/FundChat.png",
         gitUrl: "https://github.com/Seann2003/Quiz-Website---React-and-Flask-Backend"
+    }, 
+    {
+        id: 4,
+        title: "Private Polling Website Using World ID",
+        description: "Privatised polling website using World ID for security",
+        image: "/projects/PrivaPoll.png",
+        gitUrl: "https://privapoll.vercel.app/"
+    },
+    {
+        id: 5,
+        title: "Kreate",
+        description: "A community for encouraging people to start building projects no matter their background", 
+        image: "/projects/Kreate.png",
+        gitUrl: "https://startkreate.xyz/"
+    },
+    {
+        id: 6,
+        title: "MyJangka",
+        description: "Prediction market platform that allows users to buy shares based on the outcomes of economic data in different countries", 
+        image: "/projects/MyJangka.png",
+        gitUrl: "https://github.com/Seann2003/MyJangka"
     }
 ];
 
